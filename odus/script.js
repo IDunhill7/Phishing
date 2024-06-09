@@ -9,6 +9,6 @@ function validateForm() {
     }
 
     // Redirect to main.html if validation passes
-    window.location.href = '/odus/main/main.html';
+    window.location.href = 'odus/main/main.html';
     return true;
 }
