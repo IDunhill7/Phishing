@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+#Qimg {
+    margin: 2rem;  
+    border-radius: 0.8rem;  
+    max-width: 100%;
+}
+
+.choice-container1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: right;
+    display: flex;
+    margin-bottom:0.5rem ;
+    margin-left: 2rem;
+    width: 96%;
+    font-size: 1.8rem;
+    border: 0.1rem solid #809ccd;
+    border-radius: 0.5rem;
+    background-color: #65b9ff;
+    direction: rtl;
+}
+.choice-container1:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #8db6e7;
+    transform: translateY(-0.1rem);
+    transition: transform 150rem;
+}
+.choice-container2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: right;
+    display: flex;
+    margin-bottom:0.5rem ;
+    margin-left: 2rem;
+    width: 96%;
+    font-size: 1.8rem;
+    border: 0.1rem solid #809ccd;
+    border-radius: 0.5rem;
+    background-color: #65b9ff;
+    direction: rtl;
+}
+.choice-container2:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #8db6e7;
+    transform: translateY(-0.1rem);
+    transition: transform 150rem;
+}
+.choice-text {
+    color: #ffffff;
+    padding:1.5rem;
+    width: 100%;
+    direction: rtl;
+}
+#phish {
+    
+    text-decoration: none;
+}
+#exam {
+    
+    
+    text-decoration: none;
+    
+}

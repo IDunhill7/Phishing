@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    background-color: #1667a9;
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+#Qimg {
+    margin: 2rem;  
+    border-radius: 0.8rem;  
+    max-width: 70%;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    
+    font-size: 5.4rem;
+    color: #333;
+    margin-bottom: 5rem;
+}
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+/* UTILITIES */
+
+.container {
+    background-color: white;
+    border-radius: 1.5%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 78rem;
+    margin: 0 auto;
+    overflow: hidden; /* Prevent overflow */
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Take up remaining space */
+}
+#home img{
+    height: 600px; /* Set height for all logos */
+    width: auto; /* Take up remaining space */
+}
+.top-logos, .bot-logos {
+    height: 20%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center; /* Adjust spacing between logos */
+    
+}
+
+.top-logos img, .bot-logos img {
+    max-height: 140%; /* Set height for all logos */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0 -85px; /* Ensure logos don't grow too large */
+    flex-shrink: 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* BUTTONS */
+
+.btn {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 1rem 0;
+    width: 20rem;
+    position: relative; /* Add position relative */
+    z-index: 1;
+    text-align: center;
+    border: 0.1rem solid #809ccd;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #65b9ff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #8db6e7;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .container{
+        width: 96vw;
+        height: 94vh;
+        
+    }
+    
+}    
