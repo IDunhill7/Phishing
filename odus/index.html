@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        .infotextdiv {
+            margin: 20px;
+        }
+        .infotexttable {
+            width: 100%;
+        }
+        .indefault {
+            text-align: center;
+        }
+        .delabel {
+            text-align: right;
+            padding-right: 10px;
+            color: white;
+        }
+        .fieldlabeltext {
+            font-weight: bold;
+        }
+        .Error_Message {
+            color: red;
+            text-align: center;
+        }
+        table {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" name="loginform" id="loginform" autocomplete="off">
+        <div class="infotextdiv">
+            <table class="infotexttable" summary="يحتوي جدول التخطيط الحالي على معلومات قد تكون مفيدة في فهم محتوى ووظائف هذه الصفحة. ويمكن أن تكون عبارة عن مجموعة موجزة من التعليمات, أو وصفا لرسائل الخطأ, أو أية معلومات أخرى خاصة.">
+                <tr>
+                    <td class="indefault">
+                        <span class="infotext"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table width="952" height="382" border="0" cellpadding="0" cellspacing="0" dir="rtl">
+            <tr>
+                <td>
+                    <img src="/odus/home_02.jpg" width="438" height="146" alt="home_02.jpg">
+                </td>
+                <td rowspan="3">
+                    <img src="/odus/home_01.jpg" width="514" height="382" alt="home_01.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td background="/odus/home_03.jpg" style="width: 438px; height: 152px;">
+                    <table style="width: 100%; direction: rtl;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="delabel" scope="row" style="width: 15px;">&nbsp;</td>
+                            <td class="delabel" scope="row">
+                                <label for="UserID">
+                                    <span class="fieldlabeltext" style="color: white;">اسم المستخدم:</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="sid" size="27" maxlength="6" id="UserID" style="width: 160px" tabindex="1" />
+                            </td>
+                            <td>
+                                <a href="javascript:void(0);" onclick="validateForm()">
+                                    <img border="0" src="/odus/login.jpg" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="delabel" scope="row">&nbsp;</td>
+                            <td class="delabel" scope="row">
+                                <label for="PIN">
+                                    <span class="fieldlabeltext" style="color: white;">الرمز السرى:</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="password" name="PIN" size="8" maxlength="8" id="PIN" style="width: 160px" tabindex="2" />
+                                <input type="hidden" name="ButtonSelected" value="" />
+                            </td>
+                            <td>
+                                <img border="0" src="/odus/pass.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Error_Message" scope="row"></td>
+                            <td class="Error_Message" scope="row" colspan="3">
+                                <br />
+                                <font color="white">
+                                    <span id="error-message"></span>
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/odus/home_04.jpg" width="438" height="80" alt="home_04.jpg">
+                </td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
