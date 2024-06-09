@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.warning-container {
+    background-color: #ff3333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 50%;
+    margin: 100px auto;
+    position: relative;
+    height: auto; /* يتم تعيين الارتفاع تلقائيًا استنادًا إلى المحتوى */
+    overflow: visible; /* استعادة ظهور الصورة */
+}
+
+.warning-container #imggg {
+    width: 100px;
+    position: absolute;
+    top: -90px; /* زيادة المسافة بين الصورة والنص */
+    left: calc(50% - 50px);
+}
+
+.warning-container h1 {
+    font-size: 36px;
+    margin-top: 60px; /* زيادة المسافة بين العناصر لتجنب التداخل */
+}
+
+.warning-container p {
+    font-size: 24px;
+    margin-top: 20px;
+}

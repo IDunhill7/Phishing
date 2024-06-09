@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المصادقة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .input-field {
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <img src="Welcome.jpg">
+        <h2>المصادقة</h2>
+        <form id="authForm">
+            <div class="input-field">
+                <label for="id">ادخل رقم الهوية:</label><br>
+                <input type="text" id="id" name="id" maxlength="10">
+            </div>
+            <button type="submit">تأكيد</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+
+    <script>
+        document.getElementById('authForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var idInput = document.getElementById('id').value.trim();
+            if (idInput.length !== 10 || isNaN(idInput)) {
+                document.getElementById('errorMessage').textContent = "حدث خطأ";
+            } else {
+                // Redirect to index.html
+                window.location.href = 'warning.html';
+                // Display error message after redirection
+                setTimeout(function() {
+                    document.getElementById('errorMessage').textContent = "حدث خطأ";
+                }, 2000); // 2 seconds delay for demonstration
+            }
+        });
+    </script>
+</body>
+</html>
